@@ -1,1 +1,39 @@
 @import "./global.css";
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*align-items : 교차축 justify-content : 배치축 */
+
+nav {
+  display: flex;
+  justify-content: center; /*gnb를 가운데에 정렬*/
+  position: sticky;
+  top: 0;
+  width: 100%; /*필수*/
+  background-color: var(--LinkbraryBG, #edf7ff);
+} /*nav를 설정해서 안에 gnb를 넣는이유가 뭘까?*/
+
+.gnb {
+  display: flex;
+  justify-content: space-between; /*가운데를 기점으로 찢어져라~*/
+  align-items: center; /*요소들 교차축 정렬-높이가 맞춰짐*/
+  height: 9.4rem;
+  width: 100%; /*넓이를 넣어야 space-between이 제대로 작동한다.*/
+  max-width: 192rem; /*요구 사항- 1920px이상이면 내부는 고정되게 해주세요*/
+  padding: 0 20rem; 
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;  /*버튼 기초 정렬하기 */
+  height:5.4rem;
+  background-image: linear-gradient(135deg, var(--LinkbraryPrimary) 0%, #6ae3fe 100%);
+  border-radius: 0.8rem;
+  color: #f5f5f5;
+  font-size: 1.8rem;
+  font-weight: 600;
+  width: 12.8rem;
+}
