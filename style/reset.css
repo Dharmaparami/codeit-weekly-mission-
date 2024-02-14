@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Pretendard";
+}
+
+html,
+body {
+  font-size: 62.5%; /*rem단위의 계산을 편하게 하기위해서. 10px = 1rem*/
+}
+
+a {
+  color: inherit; /*부모요소의 글자색상을 그대로 따라라, 즉 파랑색으로 안보임*/
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  padding: unset; /*패딩 없애기*/
+  background-color: unset; /*패딩 없애기*/
+  cursor: pointer;
+}
